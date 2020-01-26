@@ -1,36 +1,44 @@
-<h1>Eat-Da-Burger</h1>
-<div>
-    
-<img src="/public/assets/img/FAVPNG_burger.png" alt="Burg">
+<h1 style="text-align: center;">Eat-Da-Burger</h1>
+<div style= "margin: 0 auto;
+     width: 100px; ">
+    <img src="../public/assets/img/FAVPNG_burger.png" alt="Burg">
 </div>
-<h2>Burgers</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless eaten}}
-      {{> burgers/burger-block eaten=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+<div class="flex-container">
+    <div class="flex-column">
+        <h2 style="text-align: center;">Burgers</h2>
 
-<h2>burgers that are eaten</h2>
+        <ul>
+            {{#each burgers}}
+            {{#unless eaten}}
+            {{> burgers/burger-block eaten=true}}
+            {{/unless}}
+            {{/each}}
+        </ul>
+   
+        <h2 style="text-align: center;">Burgers that are eaten</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if eaten}}
-      {{> burgers/burger-block eaten=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+        <ul>
+            {{#each burgers}}
+            {{#if eaten}}
+            {{> burgers/burger-block eaten=false}}
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
 
+<div style= "margin: 0 auto;
+     width: 100px; ">
 <h2>Add a burger</h2>
 <form class="create-form">
 
-  <div class="form-group">
-    <label for="ca">burger:</label>
-    <input type="text" id="ca" name="name">
-  </div>
+    <div class="form-group">
+        <label for="ca">burger:</label>
+        <input type="text" id="ca" name="name">
+    </div>
 
-  
-  <button type="submit">Add burger</button>
+
+    <button type="submit">Add burger</button>
 </form>
+</div>

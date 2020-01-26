@@ -1,3 +1,18 @@
+
+html {
+  background-color: aliceblue;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+
+}
+
 li {
     padding: 5px;
     margin: 5px;
@@ -17,4 +32,16 @@ li {
   .form-group {
     margin-bottom: 5px;
   }
+
   
+  /* .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  .flex-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  } */
